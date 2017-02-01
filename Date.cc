@@ -57,7 +57,7 @@ class Date
 			day=d;
 		}
 };
-int Date::daysofmonth[2][12]={31,28,31,30,31,30,31,31,30,31,30,31,31,29,31,30,31,30,31,31,30,31,30,31};
+int Date::daysofmonth[2][12]={{31,28,31,30,31,30,31,31,30,31,30,31},{31,29,31,30,31,30,31,31,30,31,30,31}};
 int main()
 {
 	Date mydate;
@@ -70,5 +70,9 @@ int main()
 	mydate.print();
 	mydate.nextday();
 	mydate.print();
+	mydate.print();
+	mydate.nextday();
+	mydate.print();
+
 	return 0;
 }
